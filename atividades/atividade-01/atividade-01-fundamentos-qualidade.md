@@ -25,16 +25,16 @@
 
 | Tipo | Necessidade | Interessado | Consequência se não for atendida |
 |---|---|---|---|
-| Explícita | [Realizar autenticação informando apenas usuário/e-mail e senha cadastrados.] | [Usuário do sistema] | [Bloqueio de acesso] |
-| Explícita | [preencher] | [preencher] | [preencher] |
-| Implícita | [preencher] | [preencher] | [preencher] |
-| Implícita | [preencher] | [preencher] | [preencher] |
+| Explícita | Realizar autenticação informando apenas usuário/e-mail e senha cadastrados. | Usuário | Bloqueio de acesso |
+| Explícita | Direcionar o usuário para landing page após validar o acesso. | Usuário | Falha |
+| Implícita | Validar a força e regras mínimas de senha (ex.: bloquear senhas triviais como "123" ou "1"). | Segurança e Negócio | Criação de contas vulneráveis, facilitando ataques de invasão e roubo de contas. |
+| Implícita | Garantir a consistência das validações do formulário e oferecer mecanismo de recuperação de acesso. | Usuário | Burlar regras do próprio sistema (aceitar 1 caractere quando exige 3) e perda definitiva da conta ao esquecer a senha. |
 
 ### 2.2 Questão sobre os fundamentos da qualidade
 
 **Um sistema que implementa todas as funcionalidades explicitamente solicitadas pode, ainda assim, apresentar baixa qualidade? Justifiquem utilizando pelo menos uma necessidade implícita identificada pela equipe.**
 
-[Resposta da equipe em até cinco linhas.]
+Sim. Um sistema que permite cadastrar e logar normalmente (cumprindo o requisito explícito) pode apresentar péssima qualidade por ignorar necessidades implícitas. Por exemplo, ao aceitar senhas fracas como "123" ou apenas "1" por falta de validação de força de senha, o sistema expõe todas as contas dos clientes a invasões fáceis. A falta de segurança implícita compromete a confiabilidade de toda a plataforma.
 
 ---
 
