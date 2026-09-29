@@ -44,10 +44,8 @@ Sim. Um sistema que permite cadastrar e logar normalmente (cumprindo o requisito
 
 | Integrante | Funcionalidade | O que foi realizado | O que foi observado | Evidência |
 |---|---|---|---|---|
-| [nome] | [funcionalidade] | [uso esperado e uso alternativo] | [comportamento observado] | [ver evidência](evidencias/nome-do-arquivo.png) |
-| [nome] | [funcionalidade] | [uso esperado e uso alternativo] | [comportamento observado] | [ver evidência](evidencias/nome-do-arquivo.png) |
-| [nome] | [funcionalidade] | [uso esperado e uso alternativo] | [comportamento observado] | [ver evidência](evidencias/nome-do-arquivo.png) |
-| [nome] | [funcionalidade] | [uso esperado e uso alternativo] | [comportamento observado] | [ver evidência](evidencias/nome-do-arquivo.png) |
+| Antonio | Cadastro de Usuário | 1. Uso esperado: Tentativa de cadastro com senha padrão.
+2. Uso alternativo/inválido: Cadastro preenchendo senha sem formato válido (ex: com senha de 1 caractere "1"). | 1. O cadastro é finalizado e o login ocorre com sucesso. 2. O sistema aceitou o cadastro sem validar o formato da senha e permitiu senhas fracas/incompletas (apenas "1"), burlando a regra mínima esperada de 3 caracteres. | [ver evidência](evidencias/nome-do-arquivo.png) |
 
 ---
 
