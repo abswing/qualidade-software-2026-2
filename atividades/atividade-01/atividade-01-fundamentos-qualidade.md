@@ -54,10 +54,7 @@ Sim. Um sistema que permite cadastrar e logar normalmente (cumprindo o requisito
 
 | Integrante | Requisito de Qualidade | Característica ou subcaracterística | Justificativa | Como avaliar |
 |---|---|---|---|---|
-| [nome] | [preencher] | [preencher] | [preencher] | [o que observar, medir, contar ou comparar] |
-| [nome] | [preencher] | [preencher] | [preencher] | [o que observar, medir, contar ou comparar] |
-| [nome] | [preencher] | [preencher] | [preencher] | [o que observar, medir, contar ou comparar] |
-| [nome] | [preencher] | [preencher] | [preencher] | [o que observar, medir, contar ou comparar] |
+| [nome] | O sistema deve exigir senhas com no mínimo 3 caracteres (contendo letras e números), além de oferecer fluxo de recuperação de conta caso o usuário esqueça a senha. | Segurança | A validação rigorosa de credenciais impede a criação de contas vulneráveis ou fakes, garantindo que apenas usuários legítimos acessem o sistema. A recuperação de senha evita o bloqueio definitivo do usuário, garantindo a continuidade de uso. | Tentar cadastrar contas com e-mails inválidos e senhas fracas (ex.: "1" ou "123") e verificar se o sistema exibe mensagens de erro e bloqueia o envio. |
 
 ---
 
