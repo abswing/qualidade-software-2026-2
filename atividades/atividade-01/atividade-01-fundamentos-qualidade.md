@@ -1,7 +1,5 @@
 # Atividade 1: Fundamentos e Características da Qualidade no LocalEats
 
-> Substituam os campos entre colchetes pelas respostas da equipe e removam as instruções antes da entrega.
-
 ## 1. Identificação
 
 **Turma:** 2026-02   
@@ -40,8 +38,6 @@ Sim. Um sistema que permite cadastrar e logar normalmente (cumprindo o requisito
 
 ## 3. Tarefa 2: Exploração da aplicação
 
-> Cada integrante deve explorar uma funcionalidade, realizando uma utilização esperada e uma utilização alternativa, inválida ou incompleta. Acrescentem ou removam linhas conforme o número de integrantes.
-
 | Integrante | Funcionalidade | O que foi realizado | O que foi observado | Evidência |
 |---|---|---|---|---|
 | Antonio | Cadastro de Usuário | Uso esperado: Tentativa de cadastro com senha padrão - Uso alternativo/inválido: Cadastro preenchendo senha sem formato válido (ex: com senha de 1 caractere "1").| O cadastro é finalizado e o login ocorre com sucesso - O sistema aceitou o cadastro sem validar o formato da senha e permitiu senhas fracas/incompletas (apenas "1"), burlando a regra mínima esperada de 3 caracteres. | [ver evidência](evidencias/teste-senha.png) |
@@ -49,8 +45,6 @@ Sim. Um sistema que permite cadastrar e logar normalmente (cumprindo o requisito
 ---
 
 ## 4. Tarefa 3: Requisitos e características de qualidade
-
-> Cada integrante deve formular um requisito de qualidade relacionado à mesma funcionalidade explorada na Tarefa 2. Acrescentem ou removam linhas conforme o número de integrantes.
 
 | Integrante | Requisito de Qualidade | Característica ou subcaracterística | Justificativa | Como avaliar |
 |---|---|---|---|---|
