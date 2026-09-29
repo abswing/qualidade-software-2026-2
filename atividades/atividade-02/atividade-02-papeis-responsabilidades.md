@@ -22,28 +22,22 @@
 
 | Problema identificado | Possível consequência para o produto ou para a equipe |
 |---|---|
-| [preencher] | [preencher] |
-| [preencher] | [preencher] |
-| [preencher] | [preencher] |
+| Ausência de validações básicas no front-end e back-end (ex.: aceitação de senhas de 1 caractere). | perda de dados e vulnerabilidade do produto |
+| Falta de fluxos essenciais de suporte ao usuário (ex.: ausência de recuperação de senha). | Frustração do Usuario |
 
 ### 2.2 Responsabilidade pela qualidade
 
 **A qualidade do LocalEats deve ser responsabilidade exclusiva do profissional de QA? Justifiquem.**
 
-[Resposta da equipe em até cinco linhas.]
+Não. A qualidade deve ser uma responsabilidade compartilhada por toda a equipe (desenvolvedores, designers, product owners e QA). Enquanto o QA atua na prevenção, criação de cenários de teste e garantia de processos, os desenvolvedores são responsáveis por escrever código seguro com validações adequadas, o designer pela usabilidade, e o PO por definir regras de negócio claras. Atribuir a qualidade apenas ao QA gera gargalos e não evita que erros estruturais cheguem ao produto.
 
 ---
 
 ## 3. Tarefa 2: Papéis e competências
 
-> Cada integrante deve ser responsável pela análise de pelo menos um papel. Acrescentem ou removam linhas conforme a composição da equipe e os papéis escolhidos.
-
 | Integrante | Papel analisado | Responsabilidades relacionadas à qualidade | Competências técnicas | Competências comportamentais |
 |---|---|---|---|---|
-| [nome] | [papel] | [preencher] | [preencher] | [preencher] |
-| [nome] | [papel] | [preencher] | [preencher] | [preencher] |
-| [nome] | [papel] | [preencher] | [preencher] | [preencher] |
-| [nome] | [papel] | [preencher] | [preencher] | [preencher] |
+| Antônio | Analista/ Tester de Qualidade | realizar testes | execução de testes funcionais | Pensamento crítico, atenção rigorosa aos detalhes, boa comunicação |
 
 ---
 
