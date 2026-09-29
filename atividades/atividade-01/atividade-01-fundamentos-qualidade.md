@@ -61,10 +61,10 @@ Sim. Um sistema que permite cadastrar e logar normalmente (cumprindo o requisito
 ## 5. Uso de inteligência artificial
 
 **Ferramenta utilizada:**  
-[Informar a ferramenta ou registrar “não utilizada”.]
+Gemini (Inteligência Artificial)
 
 **Como foi utilizada:**  
-[Descrever brevemente.]
+Como suporte na definição dos conceitos teóricos de qualidade
 
 **Como as respostas foram verificadas:**  
-[Descrever brevemente.]
+Validadas manualmente com base nos testes práticos realizados na aplicação LocalEats e revisão do conteúdo teórico.
