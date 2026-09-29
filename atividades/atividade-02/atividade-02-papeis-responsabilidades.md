@@ -1,7 +1,5 @@
 # Atividade 2: Organização da Qualidade no LocalEats
 
-> Substituam os campos entre colchetes pelas respostas da equipe e removam as instruções antes da entrega.
-
 ## 1. Identificação
 
 **Turma:** 2026-02   
