@@ -4,15 +4,14 @@
 
 ## 1. Identificação
 
-**Turma:** [preencher]  
-**Equipe:** [preencher, se aplicável]  
-**Data:** [dd/mm/aaaa]
+**Turma:** 2026-02   
+**Data:** 27/09/2026
 
 ### Integrantes
 
 | Nome | Usuário no GitHub |
 |---|---|
-| [nome] | [@usuario] |
+| Antônio B. | @abswing |
 
 **Elemento de Competência:** Compreender os fundamentos de qualidade de software e sua aplicação no desenvolvimento de sistemas.
 
@@ -26,7 +25,7 @@
 
 | Tipo | Necessidade | Interessado | Consequência se não for atendida |
 |---|---|---|---|
-| Explícita | [preencher] | [preencher] | [preencher] |
+| Explícita | [Realizar autenticação informando apenas usuário/e-mail e senha cadastrados.] | [Usuário do sistema] | [Bloqueio de acesso] |
 | Explícita | [preencher] | [preencher] | [preencher] |
 | Implícita | [preencher] | [preencher] | [preencher] |
 | Implícita | [preencher] | [preencher] | [preencher] |
