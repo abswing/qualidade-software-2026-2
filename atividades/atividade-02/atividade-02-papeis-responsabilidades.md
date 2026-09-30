@@ -55,42 +55,42 @@ Utilizem:
 - **C:** consultado antes da execução ou decisão;
 - **I:** informado sobre o resultado.
 
-| Atividade de qualidade | Papel 1 | Papel 2 | Papel 3 | Papel 4 |
+| Atividade de qualidade | Tester | Dev | PO | UX |
 |---|:---:|:---:|:---:|:---:|
-| Definir critérios de aceitação |  |  |  |  |
-| Revisar requisitos |  |  |  |  |
-| Implementar a funcionalidade |  |  |  |  |
-| Revisar o código |  |  |  |  |
-| Criar testes unitários |  |  |  |  |
-| Planejar e executar testes do sistema |  |  |  |  |
-| Registrar e acompanhar defeitos |  |  |  |  |
-| Priorizar a correção dos defeitos |  |  |  |  |
-| Aprovar a disponibilização da versão |  |  |  |  |
+| Definir critérios de aceitação | C | C | AR | C |
+| Revisar requisitos | R | C | A | R |
+| Implementar a funcionalidade | I | AR | I | C |
+| Revisar o código | I | AR | I | I |
+| Criar testes unitários | I | AR | I | I |
+| Planejar e executar testes do sistema | AR | C | I | C |
+| Registrar e acompanhar defeitos | AR | C | I | I |
+| Priorizar a correção dos defeitos | C | C | AR | I |
+| Aprovar a disponibilização da versão | C | C | AR | I |
 
 ### 4.1 Lacuna ou conflito encontrado
 
 **Lacuna ou conflito:**  
-[Indiquem uma atividade sem responsabilidade clara, excessivamente concentrada ou com responsabilidades conflitantes.]
+O PO ficou centralizando tudo e o Dev ficou fazendo o código e os testes unitários isolado, sem o Tester acompanhar nada nessa parte.
 
 **Consequência:**  
-[Expliquem o possível impacto para o produto ou para a equipe.]
+Gera gargalo na equipe, atrasa as entregas e faz passar bug besta pra fase final, custando mais tempo e trabalho pra consertar depois.
 
 ### 4.2 Práticas de QA recomendadas
 
 | Prática recomendada | Problema que ajuda a resolver | Papéis envolvidos |
 |---|---|---|
-| [preencher] | [preencher] | [preencher] |
-| [preencher] | [preencher] | [preencher] |
+| alinhamento prévio antes de codificar | Centralização do PO e critérios de aceite incompletos, evitando que requisitos sem validação de segurança ou usabilidade sigam para dev. | PO, Dev, Tester e UX |
+| testes e validação no início do fluxo | Isolamento do Dev e bugs descobertos tarde demais, reduzindo o retrabalho e o custo de correção na fase final. | Tester e Dev |
 
 ---
 
 ## 5. Uso de inteligência artificial
 
 **Ferramenta utilizada:**  
-[Informar a ferramenta ou registrar “não utilizada”.]
+Gemini (Inteligência Artificial)
 
 **Como foi utilizada:**  
-[Descrever brevemente.]
+Como suporte na definição dos conceitos teóricos de qualidade
 
 **Como as respostas foram verificadas:**  
-[Descrever brevemente.]
+Validadas manualmente com base nos testes práticos realizados na aplicação LocalEats e revisão do conteúdo teórico.
