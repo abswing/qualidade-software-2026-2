@@ -10,6 +10,8 @@
 | Nome | Usuário no GitHub |
 |---|---|
 | Antônio B. | @abswing |
+
+
 **Elemento de Competência:** Identificar papéis, responsabilidades e competências relacionadas às atividades de qualidade e testes.
 
 ---
