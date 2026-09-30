@@ -36,6 +36,9 @@ Não. A qualidade deve ser uma responsabilidade compartilhada por toda a equipe 
 | Integrante | Papel analisado | Responsabilidades relacionadas à qualidade | Competências técnicas | Competências comportamentais |
 |---|---|---|---|---|
 | Antônio | Analista/ Tester de Qualidade | realizar testes | execução de testes funcionais | Pensamento crítico, atenção rigorosa aos detalhes, boa comunicação |
+| [nome] | Desenvolvedor Backend/Frontend | Escrever código limpo, implementar validações de regras de negócio | Domínio da linguagem do projeto, segurança de código, desenvolvimento de APIs REST e validação de dados em camada de aplicação. | Resolução de problemas |
+| [nome] | PO | Definir critérios de aceite claros, mapear requisitos não funcionais e garantir que necessidades implícitas (como fluxo de recuperação de senha) entrem no planejamento. | Engenharia de requisitos, gestão de backlog, conhecimento da regra de negócio e técnicas de refinamento | visão analítica e capacidade de negociação de prioridades. |
+| [nome] | UX | Projetar fluxos intuitivos, garantir prevenção de erros na interface e assegurar usabilidade e acessibilidade no sistema. | Prototipagem de interfaces | escuta ativa e orientação à experiência do usuário. |
 
 ---
 
