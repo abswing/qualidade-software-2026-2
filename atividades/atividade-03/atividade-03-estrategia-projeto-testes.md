@@ -1,21 +1,17 @@
 # Atividade 3: Estratégia e Projeto de Testes do LocalEats
 
-> Substituam os campos entre colchetes pelas respostas da equipe e removam as instruções antes da entrega.
 
 ## 1. Identificação
 
-**Turma:** [preencher]  
-**Equipe:** [preencher, se aplicável]  
-**Data:** [dd/mm/aaaa]
+**Turma:** 2026-02   
+**Data:** 27/09/2026
 
 ### Integrantes
 
 | Nome | Usuário no GitHub |
 |---|---|
-| [nome] | [@usuario] |
-| [nome] | [@usuario] |
-| [nome] | [@usuario] |
-| [nome] | [@usuario] |
+| Antônio B. | @abswing |
+
 
 **Elemento de Competência:** Planejar e projetar testes selecionando técnicas adequadas.
 
@@ -27,7 +23,7 @@
 
 ### 2.1 Objetivo dos testes
 
-[Expliquem brevemente o que a equipe pretende verificar com os testes.]
+Validar se as principais funcionalidades da aplicação LocalEats atendem às regras de negócio, usabilidade, garantindo a prevenção de falhas e a entrega de um produto confiável ao usuário final.
 
 ### 2.2 Escopo
 
@@ -35,27 +31,23 @@
 
 | Integrante | Funcionalidade incluída | O que será verificado |
 |---|---|---|
-| [nome] | [funcionalidade] | [preencher] |
-| [nome] | [funcionalidade] | [preencher] |
-| [nome] | [funcionalidade] | [preencher] |
-| [nome] | [funcionalidade] | [preencher] |
+| [nome] | Cadastro de Usuário | Validação da força da senha (mínimo de caracteres), bloqueio de senhas simples/inválidas e exibição de mensagens de erro adequadas. |
 
-> Acrescentem ou removam linhas conforme o número de integrantes.
 
 #### Funcionalidade não incluída
 
 | Funcionalidade não incluída | Justificativa |
 |---|---|
-| [preencher] | [preencher] |
+| Recuperçao de Senhas | A funcionalidade ainda não foi implementada na aplicação LocalEats, sendo identificada como uma lacuna/débito técnico durante a análise inicial. |
 
 ### 2.3 Abordagem
 
 | Item | Decisão da equipe | Justificativa |
 |---|---|---|
-| Níveis de teste | [preencher] | [preencher] |
-| Tipos de teste | [preencher] | [preencher] |
-| Perspectiva caixa-preta ou caixa-branca | [preencher] | [preencher] |
-| Técnicas de teste | [preencher] | [preencher] |
+| Níveis de teste | Testes de Sistema | garantir que os fluxos completos do LocalEats (cadastro, login) funcionem do início ao fim |
+| Tipos de teste | Testes Funcionais, de Usabilidade e de Segurança. | Para validar se o sistema realiza as regras de negócio esperadas, oferece navegação intuitiva e protege os dados do usuário contra entradas inválidas ou fracas. |
+| Perspectiva caixa-preta ou caixa-branca | Caixa-preta | Os testes focam nas entradas e saídas através da interface, simulando a experiência real do usuário final sem necessidade de acesso ao código-fonte direto |
+| Técnicas de teste | particionamento de equivalência | Para cobrir cenários de borda no cadastro (como tamanho mínimo de senha) |
 
 ### 2.4 Ambiente e responsabilidades
 
