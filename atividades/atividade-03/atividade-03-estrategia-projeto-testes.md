@@ -110,7 +110,7 @@ Considerando a regra de tamanho mínimo de senha igual a 3 caracteres:
 Aplicação LocalEats aberta no navegador na página de cadastro de usuário.
 
 **Dados de entrada:**  
-Nome: Antonio Silva, E-mail: antonio.teste@email.com, Senha: 123 (3 caracteres).
+Nome: Antonio teste, E-mail: antonio.teste@email.com, Senha: 123 (3 caracteres).
 
 **Passos:**
 
