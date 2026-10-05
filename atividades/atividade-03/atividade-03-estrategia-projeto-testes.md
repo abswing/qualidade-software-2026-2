@@ -74,7 +74,7 @@ Validar se as principais funcionalidades da aplicação LocalEats atendem às re
 
 | ID | Integrante | Funcionalidade | Risco | Consequência | Probabilidade | Impacto | Prioridade | Justificativa |
 |---|---|---|---|---|:---:|:---:|:---:|---|
-| R01 | [nome] | Cadastro de Usuário | Aceitar senhas fracas ou de 1 único caractere. | O usuário final terá sua conta vulnerável | Alta | Alto | Alta | A falha já foi identificada no sistema e permite cadastrar credenciais totalmente inseguras |
+| R01 | Antonio | Cadastro de Usuário | Aceitar senhas fracas ou de 1 único caractere. | O usuário final terá sua conta vulnerável | Alta | Alto | Alta | A falha já foi identificada no sistema e permite cadastrar credenciais totalmente inseguras |
 
 ### 3.2 Aplicação das técnicas
 
@@ -82,115 +82,61 @@ Validar se as principais funcionalidades da aplicação LocalEats atendem às re
 
 #### Análise do integrante 1
 
-**Integrante:** [nome]  
-**Funcionalidade:** [preencher]  
-**Risco relacionado:** [R01]  
-**Técnica escolhida:** [particionamento de equivalência, análise de valor limite, tabela de decisão ou transição de estados]
+**Integrante:** Antonio  
+**Funcionalidade:** Cadastro de Usuário
+**Risco relacionado:** R01 (Aceitar senhas fracas ou de 1 único caractere)  
+**Técnica escolhida:** Análise de Valor Limite
 
 **Por que a técnica foi escolhida:**  
-[Expliquem por que a técnica é adequada à regra ou ao risco analisado.]
+A regra de negócio exige que a senha tenha um tamanho mínimo de caracteres. A Análise de Valor Limite é a técnica ideal para testar exatamente os pontos de fronteira onde o sistema deve aceitar ou recusar a entrada, que é onde a maioria dos bugs de validação acontece.
 
 **Aplicação da técnica:**  
-[Apresentem as classes, limites, combinações ou transições identificadas. Utilizem uma tabela ou lista quando necessário.]
+Considerando a regra de tamanho mínimo de senha igual a 3 caracteres:
 
-**Casos derivados:** [CT01 e CT02]
-
-#### Análise do integrante 2
-
-**Integrante:** [nome]  
-**Funcionalidade:** [preencher]  
-**Risco relacionado:** [R02]  
-**Técnica escolhida:** [preencher]
-
-**Por que a técnica foi escolhida:**  
-[preencher]
-
-**Aplicação da técnica:**  
-[preencher]
-
-**Casos derivados:** [preencher]
-
-> Repitam ou removam a seção de análise conforme o número de integrantes.
-
----
 
 ## 4. Tarefa 3: Casos de teste e rastreabilidade
 
 ### 4.1 Casos de teste
 
-> No trabalho individual, elabore três casos. No trabalho em equipe, cada integrante deve elaborar pelo menos dois casos relacionados à própria funcionalidade.
 
-### CT01: [Título do caso]
+### CT01: R01 Cadastro de Usuário
 
-**Integrante responsável:** [nome]  
-**Funcionalidade:** [preencher]  
-**Risco ou requisito relacionado:** [R01 ou descrição do requisito]  
-**Técnica utilizada:** [preencher]
+**Integrante responsável:** Antonio
+**Funcionalidade:**  Cadastro de Usuário
+**Risco ou requisito relacionado:** R01 (Aceitar senhas fracas ou de 1 único caractere)    
+**Técnica utilizada:** AVL
 
 **Pré-condição:**  
-[O que precisa existir ou estar preparado antes da execução.]
+Aplicação LocalEats aberta no navegador na página de cadastro de usuário.
 
 **Dados de entrada:**  
-[Valores ou dados necessários. Caso não sejam necessários, registrem “Não se aplica”.]
+Nome: Antonio Silva, E-mail: antonio.teste@email.com, Senha: 123 (3 caracteres).
 
 **Passos:**
 
-1. [Primeiro passo.]
-2. [Segundo passo.]
-3. [Terceiro passo.]
+1. Acessar a tela de cadastro do LocalEats.
+2. Preencher os campos de Nome e E-mail com dados válidos.
+3. Digitar a senha de 2 caracteres no campo de Senha.
+4. Clicar no botão "Registrar".
 
 **Resultado esperado:**  
-[Comportamento observável que indicará que o teste passou.]
+O cadastro não deve ser realizado. O sistema deve exibir uma mensagem informando que a senha precisa ter no mínimo 3 caracteres.
 
----
-
-### CT02: [Título do caso]
-
-**Integrante responsável:** [nome]  
-**Funcionalidade:** [preencher]  
-**Risco ou requisito relacionado:** [preencher]  
-**Técnica utilizada:** [preencher]
-
-**Pré-condição:**  
-[preencher]
-
-**Dados de entrada:**  
-[preencher]
-
-**Passos:**
-
-1. [Primeiro passo.]
-2. [Segundo passo.]
-3. [Terceiro passo.]
-
-**Resultado esperado:**  
-[preencher]
-
----
-
-> Copiem o modelo acima e continuem a numeração para criar os demais casos: CT03, CT04, CT05 etc.
 
 ### 4.2 Matriz de rastreabilidade
 
 | Integrante | Funcionalidade | Risco ou requisito | Técnica utilizada | Casos de teste |
 |---|---|---|---|---|
-| [nome] | [funcionalidade] | [R01 ou requisito] | [técnica] | [CT01 e CT02] |
-| [nome] | [funcionalidade] | [R02 ou requisito] | [técnica] | [CT03 e CT04] |
-
-> Acrescentem as linhas necessárias. Verifiquem se todos os riscos selecionados possuem casos de teste relacionados.
-
+| Antonio | Cadastro de Usuario | R01 (Senha abaixo do limite de segurança) | AVL | CT01 |
 ---
 
 ## 5. Uso de inteligência artificial
 
 **Ferramenta utilizada:**  
-[Informar a ferramenta ou registrar “não utilizada”.]
+Gemini (Inteligência Artificial)
 
 **Como foi utilizada:**  
-[Descrever brevemente.]
-
-**Uma sugestão que precisou ser alterada ou rejeitada:**  
-[Descrever brevemente. Caso nenhuma sugestão tenha sido rejeitada, expliquem como as sugestões foram analisadas criticamente.]
+Como suporte na definição dos conceitos teóricos de qualidade
 
 **Como as respostas foram verificadas:**  
-[Descrever brevemente.]
+Validadas manualmente com base nos testes práticos realizados na aplicação LocalEats e revisão do conteúdo teórico.
