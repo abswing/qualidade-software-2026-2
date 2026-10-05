@@ -53,18 +53,18 @@ Validar se as principais funcionalidades da aplicação LocalEats atendem às re
 
 | Item | Definição |
 |---|---|
-| Ambiente necessário | [preencher] |
-| Responsáveis pelo planejamento | [preencher] |
-| Responsáveis pela especificação dos casos | [preencher] |
-| Responsáveis pela futura execução | [preencher] |
+| Ambiente necessário | Navegador web |
+| Responsáveis pelo planejamento | Antonio (QA / Tester) |
+| Responsáveis pela especificação dos casos | Antonio (QA / Tester) |
+| Responsáveis pela futura execução | Antonio (QA / Tester) |
 
 ### 2.5 Critérios
 
 | Critério | Definição da equipe |
 |---|---|
-| Entrada | [O que precisa estar disponível antes do início dos testes?] |
-| Saída | [O que precisa ser atendido para considerar os testes concluídos?] |
-| Suspensão | [Em quais situações os testes deverão ser interrompidos?] |
+| Entrada O sistema precisa estar no ar e a tela de cadastro disponível para uso. |
+| Saída | Todos os testes planejados foram executados e os bugs encontrados foram documentados. |
+| Suspensão | O sistema cair (ficar fora do ar) |
 
 ---
 
@@ -72,14 +72,9 @@ Validar se as principais funcionalidades da aplicação LocalEats atendem às re
 
 ### 3.1 Análise dos riscos
 
-> Cada integrante deve analisar pelo menos um risco relacionado à funcionalidade escolhida. No trabalho individual, devem ser analisados dois riscos.
-
 | ID | Integrante | Funcionalidade | Risco | Consequência | Probabilidade | Impacto | Prioridade | Justificativa |
 |---|---|---|---|---|:---:|:---:|:---:|---|
-| R01 | [nome] | [funcionalidade] | [o que pode dar errado] | [quem será afetado e como] | [Baixa/Média/Alta] | [Baixo/Médio/Alto] | [Baixa/Média/Alta] | [preencher] |
-| R02 | [nome] | [funcionalidade] | [o que pode dar errado] | [quem será afetado e como] | [Baixa/Média/Alta] | [Baixo/Médio/Alto] | [Baixa/Média/Alta] | [preencher] |
-
-> Acrescentem as linhas necessárias e mantenham identificadores únicos: R01, R02, R03 etc.
+| R01 | [nome] | Cadastro de Usuário | Aceitar senhas fracas ou de 1 único caractere. | O usuário final terá sua conta vulnerável | Alta | Alto | Alta | A falha já foi identificada no sistema e permite cadastrar credenciais totalmente inseguras |
 
 ### 3.2 Aplicação das técnicas
 
