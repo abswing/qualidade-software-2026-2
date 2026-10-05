@@ -10,7 +10,19 @@ Repositório da equipe para as atividades da Unidade Curricular Qualidade de Sof
 
 ## Atividades
 
-- atividades/atividade-01/
+### 📁 Estrutura do Repositório
+
+.
+├── atividades/
+│   ├── atividade-01/
+│   │   ├── evidencias/
+│   │   └── atividade-01-fundamentos-qualidade.md
+│   ├── atividade-02/
+│   │   └── atividade-02-papeis-responsabilidades.md
+│   └── atividade-03/
+│       └── atividade-03-estrategia-projeto-teste.md
+└── README.md
+---
 
 ## Aplicação analisada
 
