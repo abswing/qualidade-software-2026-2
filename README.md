@@ -21,6 +21,7 @@ https://local-eats-unisenac.vercel.app/
 ├── atividades/
 │   ├── atividade-01/
 │   │   ├── evidencias/
+│   │   │   └── teste-senha.png
 │   │   └── atividade-01-fundamentos-qualidade.md
 │   ├── atividade-02/
 │   │   └── atividade-02-papeis-responsabilidades.md
