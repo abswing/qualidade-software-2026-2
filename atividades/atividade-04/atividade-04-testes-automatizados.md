@@ -4,10 +4,10 @@
 
 ## 1. Identificação
 
-- **Turma:** [informar]
+- **Turma:** [2026-02]
 - **Modalidade:** Individual
-- **Repositório:** [colar o link do repositório]
-- **Diretório da atividade:** [colar o link direto para este diretório]
+- **Repositório:** (https://github.com/abswing/qualidade-software-2026-2)
+- **Diretório da atividade:**(https://github.com/abswing/qualidade-software-2026-2/edit/main/atividades/atividade-04)
 - **Data da última execução:** 10/11/2026
 
 ### Integrantes
@@ -29,7 +29,7 @@
 
 ## 3. Testes unitários
 
-### Regra de Antonio Bernardo
+### Regra 
 
 - **Regra escolhida:** Regra 1 — valor mínimo do pedido
 - **Função implementada:** `pedido_atingiu_valor_minimo(valor_pedido)`
@@ -44,7 +44,7 @@
 
 ## 4. Aplicação do TDD
 
-### TDD de Antonio Bernardo
+### TDD 
 
 - **Regra escolhida:** Regra 1 — valor mínimo do pedido
 - **Primeiro teste escrito:** `test_aceita_pedido_igual_ao_valor_minimo`
@@ -59,7 +59,7 @@
 
 **Sistema:** https://local-eats-unisenac.vercel.app/
 
-### Teste funcional de Antonio Bernardo
+### Teste funcional 
 
 - **ID:** `TF01`
 - **Fluxo automatizado:** tentativa de login com credenciais inválidas.
@@ -122,6 +122,3 @@ python -m pytest -v | tee relatorio-pytest.txt
 - [ ] Screenshot, vídeo ou trace do Playwright.
 - [ ] Registro de uma falha encontrada e corrigida.
 
-### Descrição dos diferenciais
-
-- **Terceiro teste unitário (TU03) com `pytest.raises`:** verifica o caso de borda de valor negativo, garantindo que a função `pedido_atingiu_valor_minimo` gera `ValueError` em vez de retornar `True` ou `False`. Arquivo: `tests/test_regras_localeats.py`.
