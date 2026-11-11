@@ -22,4 +22,4 @@ tests/test_localeats.py::test_login_com_credenciais_invalidas_exibe_erro[chromiu
     fixturefunc = resolve_fixture_function(fixturedef, request)
 
 -- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
-======================== 4 passed, 1 warning in 2.30s =========================
+======================== 4 passed, 1 warning in 1.97s =========================

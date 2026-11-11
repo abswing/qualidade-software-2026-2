@@ -51,7 +51,7 @@
 - **Por que o teste falhou inicialmente:** o teste importava `pedido_atingiu_valor_minimo` de `src/regras_localeats.py`, mas a função ainda não existia, então o pytest gerou `ImportError: cannot import name 'pedido_atingiu_valor_minimo'`.
 - **Implementação mínima realizada:** criação da função retornando `valor_pedido >= 30`, o suficiente para o primeiro teste passar.
 - **Segundo teste escrito:** `test_rejeita_pedido_abaixo_do_valor_minimo` (e, em seguida, `test_valor_negativo_gera_value_error`, que falhou até ser adicionada a verificação `if valor_pedido < 0: raise ValueError(...)`).
-- **Melhoria ou refatoração realizada:** foram removidas duas linhas sem efeito (uma comparação `valor_pedido >= 30` cujo resultado era descartado e um `return False` inalcançável após o `raise`), e o número `30` foi substituído pela constante `VALOR_MINIMO_PEDIDO`, deixando a regra mais legível. Após a refatoração, os três testes continuaram passando.
+- **Melhoria ou refatoração realizada:** 
 
 ---
 
@@ -62,7 +62,7 @@
 ### Teste funcional de Antonio Bernardo
 
 - **ID:** `TF01`
-- **Fluxo automatizado:** tentativa de login com credenciais inválidas. Durante a exploração, foi observado que todas as páginas do LocalEats redirecionam para `login.html` quando não há usuário logado, por isso a tela de login foi escolhida como fluxo estável.
+- **Fluxo automatizado:** tentativa de login com credenciais inválidas.
 - **Interação realizada:** preenchimento do campo **E-mail** (placeholder `teste@teste.com`) com `naoexiste@teste.com`, do campo **Senha** (placeholder `Sua senha secreta`) com `senhaerrada` e clique no botão **Entrar** do formulário de login (`#loginForm`).
 - **Primeira assertion:** a mensagem de erro (`#errorMsg`) é exibida com o texto `Invalid credentials`.
 - **Segunda assertion:** a URL continua contendo `login.html`, ou seja, o usuário não foi levado para a página inicial.
@@ -89,22 +89,22 @@ python -m pytest -v | tee relatorio-pytest.txt
 
 ## 7. Explicações individuais
 
-### Explicação do teste de Antonio Bernardo
+### Explicação do teste
 
 - **Teste escolhido:** `test_login_com_credenciais_invalidas_exibe_erro`
 - **Comportamento verificado:** o sistema deve recusar um login com e-mail e senha inexistentes e informar o erro ao usuário.
 - **Dados ou estado inicial:** navegador sem usuário logado (o Playwright inicia cada teste com um contexto limpo), por isso o LocalEats abre a tela de login. São usados o e-mail `naoexiste@teste.com` e a senha `senhaerrada`, que não correspondem a nenhuma conta.
-- **Resultado esperado:** a mensagem `Invalid credentials` aparece na tela e a URL permanece em `login.html`. O `expect` do Playwright aguarda automaticamente a resposta do servidor, sem uso de `time.sleep`. O botão foi localizado dentro de `#loginForm` porque a página possui dois botões "Entrar" (a aba superior e o botão de envio), e sem essa restrição o Playwright acusaria erro de *strict mode*.
+- **Resultado esperado:** a mensagem `Invalid credentials` aparece na tela e a URL permanece em `login.html`.
 - **O que faria o teste falhar:** o sistema aceitar credenciais inválidas e redirecionar para a página inicial; a mensagem de erro não aparecer ou ter outro texto; ou o campo/botão mudar de texto ou identificador, impedindo o locator de encontrá-lo.
 
 ---
 
 ## 8. Uso de inteligência artificial
 
-- **Ferramenta utilizada:** Claude (Anthropic)
-- **Como a ferramenta foi utilizada:** como apoio para organizar a estrutura de pastas, entender o ciclo do TDD, revisar a função implementada, explorar a tela de login do LocalEats para identificar os elementos reais e sugerir locators e assertions para o teste funcional.
-- **Uma sugestão que precisou ser alterada ou rejeitada:** a IA afirmou que `150 * 0.10` não resultaria exatamente em `15` em Python por causa de ponto flutuante, e que o teste falharia. Ao executar, o teste passou (o resultado é `15.0`), então a afirmação foi descartada. Também foi sugerido o uso de ambiente virtual (`.venv`), que foi removido por já haver o pytest instalado na máquina.
-- **Motivo da alteração ou rejeição:** a execução real dos testes mostrou que a previsão estava errada; e o ambiente virtual não era necessário para a entrega.
+- **Ferramenta utilizada:** Claude e ChatGpt
+- **Como a ferramenta foi utilizada:** como apoio para organizar a estrutura de pastas, entender o ciclo do TDD, revisar a função implementada,fez o markdown e eu refatorei.
+- **Uma sugestão que precisou ser alterada ou rejeitada:**  foi sugerido o uso de ambiente virtual (`.venv`), que foi removido por já haver o pytest instalado na máquina.
+- **Motivo da alteração ou rejeição:** o ambiente virtual não era necessário para a entrega.
 - **Como o código sugerido foi verificado:** todo o código foi executado com `python -m pytest -v`, incluindo a observação das falhas antes da implementação (TDD) e a execução do teste funcional com `--headed` para acompanhar o navegador. Os textos usados no teste funcional foram conferidos diretamente na interface do LocalEats.
 
 ---
